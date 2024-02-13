@@ -1,0 +1,127 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.join_room{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join_room input{
+  height: 35px;
+  width: 300px;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(88, 179, 196);
+}
+
+.join_room button{
+  height: 40px;
+  width: 310px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  background-color: rgb(144, 213, 240);
+  color: black;
+  border: 1px solid rgb(0, 238, 255);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.join_room input::placeholder{
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.chat_container{
+  height: 600px;
+  width: 400px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  margin: auto;
+  /* background-color: yellow; */
+}
+
+.chat_container span{
+  color: aqua;
+}
+
+.chat_box{
+  background-color: rgb(20, 56, 50);
+  height: 500px;
+  position: relative;
+  border: 1px solid rgb(104, 208, 226);
+}
+
+.chat_body{
+  position: absolute;
+  bottom: 0;
+}
+
+.chat_body input{
+  height: 40px;
+  width: 350px;
+   border: 1px solid rgb(107, 221, 230);
+}
+
+.chat_body button{
+  height: 46px;
+  padding: 10px;
+  width: 42px;
+  background-color: rgb(43, 92, 226);
+  color: white;
+}
+
+.chat_body input::placeholder{
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.message_content{
+  display: flex;
+  /* align-items: center; */
+  line-height: 0;
+  margin: 10px;
+  font-weight: bolder;
+}
+
+#you{
+   justify-content: end;
+}
+
+#other{
+  justify-content: start;
+}
+
+#y{
+  background-color: rgb(111, 210, 235);
+  padding: 10px;
+  border-radius: 5%;
+  color: black;
+}
+
+#b{
+  background-color: rgb(217, 255, 0);
+  padding: 10px;
+  border-radius: 5%;
+  color: black;
+}
+
+.msg_detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.auto-scrolling-div::-webkit-scrollbar{
+  display: none;
+}
