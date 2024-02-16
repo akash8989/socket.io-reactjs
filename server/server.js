@@ -36,9 +36,9 @@ import { Server} from "socket.io"
      })
 })
 
-server.get("/", ()=>{
-   console.log(hello)
-})
+// server.get("/", ()=>{
+//    console.log(hello)
+// })
 
  app.use(cors())
 //  app.use(router)
