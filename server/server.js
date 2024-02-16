@@ -3,7 +3,7 @@ import cors from "cors"
 import http from "http"
 import { Server} from "socket.io"
 
-import router from "./router"
+// import router from "./router"
 
  const app = express();
 
@@ -41,7 +41,7 @@ server.get("/", ()=>{
 })
 
  app.use(cors())
- app.use(router)
+//  app.use(router)
 
  server.listen( process.env.PORT || 3000 , ()=> console.log(" server is ruuning on port 3000"))
 
