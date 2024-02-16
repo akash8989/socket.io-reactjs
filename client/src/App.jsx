@@ -4,7 +4,7 @@ import Chat from './Chat'
 import music from "./iphone1.mp3"
 
 
-const socket = io.connect("https://chattingrandom.onrender.com/")
+const socket = io.connect("https://sagsddsdhsh.onrender.com/")
 
 const App = () => {
 
