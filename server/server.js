@@ -32,6 +32,10 @@ import { Server} from "socket.io"
      })
 })
 
+server.use("/", ()=>{
+   console.log(hello)
+})
+
  app.use(cors())
 
  server.listen( 3000 , ()=> console.log(" server is ruuning on port 3000"))
