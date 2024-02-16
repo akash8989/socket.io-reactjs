@@ -3,16 +3,20 @@ import cors from "cors"
 import http from "http"
 import { Server} from "socket.io"
 
+import router from "./router"
+
  const app = express();
 
  const server = http.createServer(app)
 
- const io = new Server(server,{
-    cors : {
-        origin:"https://brilliant-cat-058ecd.netlify.app/",
-        methods:[ "GET", "PUT"]
-    }
- })
+ const io = new Server(server
+   // ,{
+   //  cors : {
+   //      origin:"http://localhost:5173/",
+   //      methods:[ "GET", "PUT"]
+   //  }
+//  }
+ )
 
  io.on("connection", (socket)=> {console.log(socket.id)
 
@@ -32,12 +36,13 @@ import { Server} from "socket.io"
      })
 })
 
-server.use("/", ()=>{
+server.get("/", ()=>{
    console.log(hello)
 })
 
  app.use(cors())
+ app.use(router)
 
- server.listen( 3000 , ()=> console.log(" server is ruuning on port 3000"))
+ server.listen( process.env.PORT || 3000 , ()=> console.log(" server is ruuning on port 3000"))
 
  
