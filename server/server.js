@@ -9,7 +9,7 @@ import { Server} from "socket.io"
 
  const io = new Server(server,{
     cors : {
-        origin:"https://65ccad3ebcc52b0b3c6aad5d--brilliant-cat-058ecd.netlify.app/",
+        origin:"http://localhost/5173",
         methods:[ "GET", "PUT"]
     }
  })
